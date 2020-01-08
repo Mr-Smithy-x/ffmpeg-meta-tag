@@ -39,7 +39,6 @@ def main(arguments):
     audio_files = [f for f in os.listdir(audio_path) if isfile(join(audio_path, f))]
     cover_files = [f for f in os.listdir(cover_path) if isfile(join(cover_path, f)) and (
                 f.lower().endswith(".png") or f.lower().endswith('.jpg') or f.lower().endswith('.jpeg'))]
-    track = 0
     for file in audio_files:
         track = audio_files.index(file)
         length = len(file)
